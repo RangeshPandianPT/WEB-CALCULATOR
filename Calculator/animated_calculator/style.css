@@ -1,0 +1,119 @@
+:root {
+  --bg: #f4f4f9;
+  --text: #222;
+  --display-bg: #222;
+  --display-text: #0f0;
+  --history-bg: #e9ecef;
+  --button-bg: #fafafa;
+  --button-hover: #e0e0e0;
+}
+
+body.dark-mode {
+  --bg: #121212;
+  --text: #f4f4f9;
+  --display-bg: #333;
+  --display-text: #0f0;
+  --history-bg: #1e1e1e;
+  --button-bg: #333;
+  --button-hover: #444;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  transition: background 0.3s, color 0.3s;
+}
+
+.calculator {
+  background: var(--bg);
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  overflow: hidden;
+  width: 350px;
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.display {
+  background: var(--display-bg);
+  color: var(--display-text);
+  font-size: 2em;
+  padding: 20px;
+  text-align: right;
+  min-height: 60px;
+  transition: background 0.3s, color 0.3s;
+}
+
+.display.flash {
+  background: #444;
+}
+
+.history {
+  background: var(--history-bg);
+  color: var(--text);
+  font-size: 0.9em;
+  padding: 10px;
+  height: 80px;
+  overflow-y: auto;
+  transition: all 0.5s ease;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+button {
+  font-size: 1.5em;
+  padding: 20px;
+  border: 1px solid #ddd;
+  background: var(--button-bg);
+  color: var(--text);
+  cursor: pointer;
+  transition: background 0.2s, transform 0.1s, color 0.3s;
+}
+
+button:hover {
+  background: var(--button-hover);
+}
+
+button:active {
+  transform: scale(0.96);
+}
+
+button.operator {
+  background: #f0ad4e;
+  color: white;
+}
+
+button.equal {
+  background: #5cb85c;
+  color: white;
+  grid-column: span 2;
+}
+
+button.clear {
+  background: #d9534f;
+  color: white;
+}
+
+button.memory {
+  background: #5bc0de;
+  color: white;
+}
+
+button.toggle-mode {
+  grid-column: span 4;
+  background: #6c757d;
+  color: white;
+}
