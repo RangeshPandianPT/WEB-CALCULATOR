@@ -1,7 +1,9 @@
 # CodeAlpha_Calculator
 🧮 Basic Calculator
 
-A simple and functional calculator built using HTML, CSS, and JavaScript. This project demonstrates core front-end development skills by creating an interactive calculator capable of performing basic arithmetic operations.
+A simple and functional calculator built using HTML, CSS, and JavaScript. This project demonstrates core front-end development skills by creating an interactive calculator capable of performing basic arithmetic operations
+
+--- 
 
 ✨ Features
 
@@ -19,6 +21,11 @@ Bonus Features:
 
 2)Responsive and styled UI for an enhanced user experience
 
+---
+##PREVIEW 
+![Image](https://github.com/user-attachments/assets/ba3c9c86-7d57-4a2e-a3af-c878f2612af2)
+
+---
 
 📁 Project Structure
 
@@ -28,5 +35,5 @@ Bonus Features:
 
 3)script.js – Logic and interactivity
 
-
+---
 
