@@ -5,7 +5,7 @@ A simple and functional calculator built using HTML, CSS, and JavaScript. This p
 
 --- 
 
-✨ Features
+## ✨ Features
 
 1)Perform addition, subtraction, multiplication, and division
 
@@ -22,12 +22,12 @@ Bonus Features:
 2)Responsive and styled UI for an enhanced user experience
 
 ---
-##PREVIEW 
+## PREVIEW 
 ![Image](https://github.com/user-attachments/assets/ba3c9c86-7d57-4a2e-a3af-c878f2612af2)
 
 ---
 
-📁 Project Structure
+## 📁 Project Structure
 
 1)index.html – Structure of the calculator
 
